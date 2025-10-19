@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -6,7 +7,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t shaikmustafa77/adservice:latest ."
+                        sh "docker build -t muralike1234/adservice:latest ."
                     }
                 }
             }
@@ -16,7 +17,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push shaikmustafa77/adservice:latest "
+                        sh "docker push muralike1234/adservice:latest "
                     }
                 }
             }
