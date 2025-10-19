@@ -465,7 +465,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: shaikmustafa77/loadgenerator:latest
+        image: muralike1234/loadgenerator:latest
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -548,7 +548,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: shaikmustafa77/shippingservice:latest
+        image: muralike1234/shippingservice:latest
         ports:
         - containerPort: 50051
         env:
@@ -654,7 +654,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: shaikmustafa77/adservice:latest
+        image: muralike1234/adservice:latest
         ports:
         - containerPort: 9555
         env:
